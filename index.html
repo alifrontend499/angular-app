@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ANGULAR 1.6.7 -->
+    <script type="text/javascript" src='js/shared/angular.js'></script>
+  </head>
+  <body>
+    <div ng-controller='mainController' class="">
+      <!-- <div class="card">
+        <app-name data="Book1"><app-name>
+      </div>
+      <div class="card">
+        <app-name data="Book2"><app-name>
+      </div>
+      <div class="card">
+        <app-name data="Book3"><app-name>
+      </div>
+      <div class="card">
+        <app-name data="Book4"><app-name>
+      </div> -->
+      <!-- <div class="card" ng-init="firstName='';lastName=''">
+        <input type="text" ng-model="firstName">
+        <input type="text" ng-model="lastName">
+        <p style="background:red;color:#fff;padding:0 5px">First name is: {{ firstName }}</p>
+        <p style="background:red;color:#fff;padding:0 5px;margin-top:5px">Last name is: {{ lastName }}</p>
+      </div> -->
+
+      <!-- <div class="card ">
+        directive: my-dir
+      </div> -->
+      <div class="card" ng-controller="input">
+        <input type="text" ng-model="name" value="">
+        <p>{{ name }}</p>
+      </div>
+      <div class="card" ng-controller="timeoutFun">
+          Hi {{ name }}
+      </div>
+
+
+    <script type="text/javascript" src='js/shared/jquery.js'></script>
+    <!-- Modules -->
+    <script type="text/javascript" src='js/app.js'></script>
+    <!-- Controller -->
+    <script type="text/javascript" src='js/controller/mainController.js'></script>
+    <!-- Directives -->
+    <script type="text/javascript" src='js/directive/appInfo.js'></script>
+    <script type="text/javascript" src='js/directive/directive.js'></script>
+    <!-- Services -->
+    <!-- <script type="text/javascript" src="https://code.angularjs.org/1.6.7/angular-messages.min.js"> -->
+
+    </script>
+  </body>
+</html>
