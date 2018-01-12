@@ -1,36 +1,36 @@
 {
-  "city_name": "New York",
-  "country": "US",
-  "days": [
+  "city_name": "Goraya",
+  "country": "India",
+  "friends": [
     {
-      "datetime": 1420390800000,
-      "icon": "https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/sun.svg",
-      "high": 68,
-      "low": 37
+      "name": "Karan",
+      "age": 22,
+      "profession": "Driver"
     },
     {
-      "datetime": 1420477200000,
-      "icon": "https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/clouds.svg",
-      "high": 68,
-      "low": 37
+      "name": "Jaskaran",
+      "age": 25,
+      "profession": "Developer"
     },
     {
-      "datetime": 1420563600000,
-      "icon": "https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/rain.svg",
-      "high": 46,
-      "low": 14
+      "name": "Jaswinder",
+      "age": 28,
+      "profession": "Developer"
     },
     {
-      "datetime": 1420650000000,
-      "icon": "https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/clouds.svg",
-      "high": 46,
-      "low": 28
+      "name": "Abhay",
+      "age": 22,
+      "profession": "Doctor"
     },
     {
-      "datetime": 1420736400000,
-      "icon": "https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/sun.svg",
-      "high": 59,
-      "low": 32
+      "name": "Lucky",
+      "age": 24,
+      "profession": "Free Romer"
+    },
+    {
+      "name": "Lucky",
+      "age": 24,
+      "profession": "Free Romer"
     }
   ]
 }

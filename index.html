@@ -8,7 +8,7 @@
     <script type="text/javascript" src='js/shared/angular.js'></script>
   </head>
   <body>
-    <div ng-controller='mainController' class="">
+    <!-- <div ng-controller='mainController' class=""> -->
       <!-- <div class="card">
         <app-name data="Book1"><app-name>
       </div>
@@ -31,12 +31,48 @@
       <!-- <div class="card ">
         directive: my-dir
       </div> -->
-      <div class="card" ng-controller="input">
+      <!-- <div class="card" ng-controller="input">
         <input type="text" ng-model="name" value="">
         <p>{{ name }}</p>
       </div>
       <div class="card" ng-controller="timeoutFun">
           Hi {{ name }}
+      </div> -->
+      <div class="card" ng-controller="httpData" ng-cloak>
+        <ul class="list-unstyled">
+          <li>
+            <h1>{{ maData.country }}</h1>
+          </li>
+          <li>
+            <h3>{{ maData.city_name }}</h3>
+          </li>
+          <li>
+            <table>
+              <tr>
+                <td>No.</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>profession</td>
+              </tr>
+              <tr ng-repeat="friend in maData.friends">
+                <td> {{ $index + 1 }} </td>
+                <td> {{ friend.name | uppercase}} </td>
+                <td> {{ friend.age}} </td>
+                <td> {{ friend.profession}} </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <div class="card" ng-controller="selOpts">
+        <select ng-model="selectedName" ng-options="item.name for item in names"></select>
+        <p>you select the name: {{ selectedName.name}}
+        <span style="display: block;"> and his/her age is {{ selectedName.age }} </span>
+        <span style="display: block;"> and his/her is a {{ selectedName.profession }} </span>
+        </p>
+      </div>
+      <div class="card" ng-controller="rCont">
+
       </div>
 
 
@@ -49,7 +85,7 @@
     <script type="text/javascript" src='js/directive/appInfo.js'></script>
     <script type="text/javascript" src='js/directive/directive.js'></script>
     <!-- Services -->
-    <!-- <script type="text/javascript" src="https://code.angularjs.org/1.6.7/angular-messages.min.js"> -->
+    <script type="text/javascript" src="js/shared/services/angular-route.js">
 
     </script>
   </body>
